@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: Lyra1337/aspnet-chrome:latest
+          tags: lyra1337/aspnet-chrome:latest
