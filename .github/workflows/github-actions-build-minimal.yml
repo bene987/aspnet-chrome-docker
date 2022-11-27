@@ -22,8 +22,8 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build and push
         uses: docker/build-push-action@v3
@@ -31,4 +31,4 @@ jobs:
           context: .
           file: Minimal.Dockerfile
           push: true
-          tags: lyra1337/aspnet-chrome:latest-minimal,lyra1337/aspnet-chrome:latest
+          tags: bene987/aspnet-chrome:latest-minimal,bene987/aspnet-chrome:latest,bene987/aspnet-chrome:7.0-jammy
