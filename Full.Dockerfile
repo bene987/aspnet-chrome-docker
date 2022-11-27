@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base
+FROM mcr.microsoft.com/dotnet/aspnet:7.0-jammy AS base
 RUN apt-get update
 RUN apt-get -yq install wget
 RUN wget -nv https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
